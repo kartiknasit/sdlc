@@ -2,3 +2,8 @@
 
 /Servers/
 /RemoteSystemsTempFiles/
+/*/target/
+/*/.settings/
+/*/.classpath
+/*/.project
+/*/.springBeans
