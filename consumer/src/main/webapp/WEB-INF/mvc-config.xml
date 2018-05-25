@@ -25,9 +25,9 @@
 	</bean>
 	<bean id="JMSMessageListenerContainer"
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
-		<property name="connectionFactory" value="connFactory"></property>
-		<property name="messageListener" value="consumerListener"></property>
-		<property name="destination" value="defaultDestination"></property>
+		<property name="connectionFactory" ref="connFactory"></property>
+		<property name="messageListener" ref="consumerListener"></property>
+		<property name="destination" ref="defaultDestination"></property>
 		<property name="concurrentConsumers" value="4"></property>
 	</bean>
 	<bean id="jmsTemplate"
